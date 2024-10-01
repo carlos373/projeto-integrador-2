@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+
+.container-1{
+    background-color: aqua;
+    border-radius: 10x; /* Define o raio de arredondamento dos cantos de um elemento */
+
+
+    text-align: center;/*center centraliza o texto;
+    vertical-align: Alinha elementos inline ou células de tabela verticalmente (topo, meio, base). middle(vertical)*/
+     /* text-align;  Alinha o texto dentro de um elemento (esquerda, direita, centro, ou justificado) */
+
+    align-items: center;/* align-content: Controla o alinhamento das linhas dentro de um container flexível (em Flexbox ou Grid).
+    
+    space between: espaço entre os itens */
+}
+
+.container-2{
+    background-color: blueviolet; /* define a cor do fundo de um elemento */
+
+    margin: 20px; /*Define a margem externa ao redor de um elemento.*/
+
+    padding:15px; /*Define o preenchimento interno dentro de um elemento.*/
+
+    width: 100px;
+    height: 150px;/* Define largura e altura de um elemento */
+
+    color: aqua;/* cor do texto de um elemento / caixa */
+
+    border: 2px solid white; /*  Define a borda ao redor de um elemento*/
+
+    border-style: none; /* Define o estilo da borda (sólida, tracejada, pontilhada) */
+}
+
+.container-3{
+    background-color: brown;
+
+    display:flex; /* Define o modelo de exibição do elemento (bloco, inline, flex, grid)*/
+
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    /* position: Define o posicionamento de um elemento (estático, relativo, absoluto, fixo, sticky). */
+
+    grid-template-columns: 1fr 2fr; /* grid-template-columns: Define a estrutura das colunas em um layout de grade. */
+
+    grid-gap: 10px; /* grid-gap: Define o espaçamento entre as células de uma grade */
+
+    box-shadow:none ; /* Adiciona sombra ao redor do elemento*/
+
+    text-shadow:none ; /* Adiciona sombra ao texto */
+
+
+    transition: all 0.3 ease-in-out; /* transition: Define a transição suave entre estados de estilo */
+
+    animation: slideIn 2s ease-in; /* animation: Define uma animação de keyframes.
+    css */
+
+    opacity: 0.8; /* opacity: Define a opacidade de um elemento (0 é totalmente transparente, 1 é totalmente opaco). */
+
+}
