@@ -1,160 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Somando numeros</title>
+  </head>
+  <body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="textn1" id="textn1" />
+    <input type="number" name="textn2" id="textn2" />
+    <input type="button" value="Somar" onclick="somar()" />
 
-    <div class="container-1"> Caixa-1
-        <div class="container-2"> Caixa-2
-            <div class="container-3"> Caixa-3
-                
-            </div>
-        </div>
-    </div>
+    <div id="res">Resultado</div>
 
-
-
-    <!-- 1. O elemento <form> é usado para coletar dados do usuário e enviá-los para um servidor. Ele serve como container para os campos de entrada (inputs). -->
-    <form action="/submit" method="POST">
-        <!-- Elementos de formulário são colocados aqui -->
-      </form>
-
-      <!-- action: Define o local (URL) onde os dados do formulário serão enviados.
-    
-        method: Define o método HTTP usado (GET ou POST). -->
-
-
-
-        <!-- 2. Entrada de Texto (<input> e <textarea>)
-Elementos para permitir que os usuários escrevam texto e interajam com a página.
-
-<input type="text">: Campo de texto para uma linha. -->
-
-<label for="name">Nome:</label>
-<input type="text" id="name" name="name">
-
-
-<!-- <textarea>: Campo de texto para várias linhas. -->
-
-    <label for="message">Mensagem:</label>
-<textarea id="message" name="message" rows="4" cols="50"></textarea>
-
-<!-- <input type="password">: Campo para senhas, que oculta o texto digitado. -->
-
-<label for="password">Senha:</label>
-<input type="password" id="password" name="password">
-
-
-<!-- 3.Botões (<button> e <input type="submit">)
-    Usados para enviar dados ou acionar ações interativas.
-    
-    <button>: Cria um botão que pode conter texto ou ícones.-->
-
-        <button type="submit">Enviar</button>
-
-        <!-- <input type="submit">: Botão para submeter um formulário. -->
-
-        <input type="submit" value="Enviar">
-
-
-       <!-- <input type="button">: Botão sem função pré-definida (usado com JavaScript).-->
-
-       <input type="button" value="Clique Aqui" onclick="alert('Botão clicado!')">
-
-
-       <!--4. Campos de Seleção e Opções
-Permitem que o usuário faça escolhas entre várias opções.
-
-<select>: Menu suspenso com opções.--> 
-
-
-    <label for="cars">Escolha um carro:</label>
-<select id="cars" name="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-
-
-<!-- <input type="checkbox">: Caixa de seleção para marcar várias opções.--> 
-
-<input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
-<label for="subscribe">Assinar newsletter</label>
-
-
-<!--  <input type="radio">: Botões de rádio para selecionar uma única opção em um grupo.-->
-
-<input type="radio" id="male" name="gender" value="male">
-<label for="male">Masculino</label>
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Feminino</label>
-
-<!-- v5. Upload de Arquivos (<input type="file">)
-Permite que o usuário envie arquivos através do formulário.-->
-
-<label for="file">Envie um arquivo:</label>
-<input type="file" id="file" name="file">
-
-<!-- 6. Receber Mensagens e Interagir
-Para receber feedback, enviar mensagens ao usuário ou acionar funções interativas, podemos usar JavaScript em conjunto com HTML. Aqui estão alguns exemplos:
-
-Mensagens interativas com JavaScript:
-
-alert(): Mostra uma caixa de diálogo simples com uma mensagem.-->
-
-<button onclick="alert('Olá, Usuário!')">Clique para Alerta</button>
-
-<!-- prompt(): Solicita entrada do usuário através de uma caixa de diálogo.-->
-
-<button onclick="getName()">Digite Seu Nome</button>
-<script>
-  function getName() {
-    var name = prompt('Qual é o seu nome?');
-    alert('Olá, ' + name);
-  }
-</script>
-
-<!-- Exibir mensagens na página:
-
-Você pode exibir uma mensagem personalizada no corpo da página.-->
-
-<button onclick="showMessage()">Mostrar Mensagem</button>
-<p id="messageArea"></p>
-<script>
-  function showMessage() {
-    document.getElementById('messageArea').innerText = 'Você clicou no botão!';
-  }
-</script>
-
-<!-- 7. Botão de Reset (<input type="reset">)
-Permite que o usuário limpe os campos de um formulário.-->
-
-<input type="reset" value="Limpar Formulário">
-
-<!-- 8. Campos Específicos para Datas, Emails, e Outros
-O HTML5 introduziu novos tipos de campos que facilitam a entrada de informações específicas.
-
-<input type="email">: Campo para entrada de email, que valida se o formato está correto.-->
-
-<label for="email">Email:</label>
-<input type="email" id="email" name="email">
-
-<!-- <input type="date">: Campo para entrada de datas. -->
-
-<label for="birthday">Data de Nascimento:</label>
-<input type="date" id="birthday" name="birthday">
-
-<!-- <input type="number">: Campo para números -->
-
-<label for="quantity">Quantidade:</label>
-<input type="number" id="quantity" name="quantity" min="1" max="100">
-
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
